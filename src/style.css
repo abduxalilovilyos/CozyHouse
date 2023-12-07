@@ -1,0 +1,366 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+:root
+{
+    --milkcolor: #F1CDB3;
+    --white: #FFFFFF;
+    --gray: #545454;
+}
+.site
+{
+    max-width: 1280px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border: 3px solid black;
+}
+.header
+{
+    width: 100%;
+    padding: 40px 40px 0 40px;
+}
+.header .navbar
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.header .navbar .logo h1
+{
+    color: var(--milkcolor);
+    font-family: Georgia;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35.2px; 
+    letter-spacing: 1.92px;    
+}
+.header .navbar .logo h5
+{
+    color: var(--white);
+    font-family: Arial;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.3px;    
+}
+.navbar ul
+{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navbar ul li a
+{
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    border-bottom: 3px solid transparent;
+}
+.navbar ul li a:hover
+{
+    border-bottom: 3px solid var(--milkcolor);
+}
+label #btn, label #cancel
+{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 35px;
+    display: none;
+    color: var(--milkcolor);
+    cursor: pointer;
+    transform: translate(0, -50%);
+}
+#check
+{
+    display: none;
+}
+.header__contener
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 0 0 0 ;
+}
+.header__text
+{
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+.header__text h1
+{
+    color: var(--white);
+    font-family: Georgia;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 57.2px;    
+}
+.header__text p
+{
+    color: #CDCDCD;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;     
+}
+.header__text button
+{
+    width: 245px;
+    height: 55px;
+    border-radius: 100px;
+    background-color: var(--milkcolor);
+    color: black;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; 
+    letter-spacing: 1.02px;    
+}
+.header__text button:hover
+{
+    background-color: var(--white);
+}
+.header__contener img
+{
+    width: 60%;
+}
+.about
+{
+    width: 100%;
+    padding: 80px 215px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about__text
+{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0 0 0 130px;
+}
+.about__text h1
+{
+    color: var(--gray);
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45.5px;
+    letter-spacing: 2.1px;    
+}
+.about__text p
+{
+    color: var(--gray);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;  
+}
+.carusel , .donat
+{
+    width: 100%;
+    padding: 80px 120px;
+    background-color: #F6F6F6;
+    margin-top: 50px;
+}
+.carusel h3 , .help h3
+{
+    color: var(--gray);
+    text-align: center;
+    font-family: Georgia;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45.5px; 
+    letter-spacing: 2.1px;   
+    padding: 20px 310px; 
+}
+.carusel__card
+{
+    width: 270px;
+    background-color: var(--white);
+    text-align: center;
+}
+.carusel__card *
+{
+    margin-bottom: 24px;
+}
+.carusel__card h4
+{
+    color: var(--gray);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.2px;    
+}
+.carusel__card button
+{
+    width: 187px;
+    height: 52px;
+    border-radius: 30px;
+    border: 3px solid var(--milkcolor);
+    background-color: var(--white);
+    color: var(--gray);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22/1px;
+    letter-spacing: 1.02px;    
+}
+.carusel__card button:hover
+{
+    background-color: var(--milkcolor);
+    color: black;
+}
+.help
+{
+    width: 100%;
+    padding: 80px 120px;
+    background-color: white;
+}
+.help__card
+{
+    width: 200px;
+    margin-top: 70px;
+    text-align: center;
+}
+.help__card h4
+{
+    color: var(--gray);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px; 
+    margin-top: 30px;
+    letter-spacing: 1.2px;    
+}
+.HelpPrimeCard
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.donate__text h3
+{
+    color: var(--gray);
+    text-align: left;
+    font-family: Georgia;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45.5px; 
+    letter-spacing: 2.1px; 
+}
+.donat *
+{
+    margin-bottom: 20px;
+}
+.donat 
+{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.donatImg
+{
+    width: 50%;
+}
+.donate__text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* width: 50%; */
+}
+.donate__text h5
+{
+    color: var(--gray);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.5px;
+    letter-spacing: 0.9px;    
+}
+.donate__text .bankcard
+{
+    width: 100%;
+    display: flex;
+    padding-top: 6px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 9px;
+    background-color: var(--milkcolor);
+}
+.bankcard h4
+{
+    color: var(--gray);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400; 
+}
+.donate__text p
+{
+    color: #B2B2B2;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 18px;    
+}
+.footer
+{
+    width: 100%;
+    padding: 60px 40px 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 160px;
+}
+.footer__text
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.footer__text h3
+{
+    color: var(--white);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2.1px;    
+}
+.text__element
+{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.text__element h4
+{
+    color: var(--milkcolor);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 1.2px;    
+}
+.footerImg
+{
+    width: 23%;
+}

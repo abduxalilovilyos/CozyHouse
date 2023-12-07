@@ -1,0 +1,321 @@
+@media screen and (min-width: 1200px) {
+    .site
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width:1999.98px) {
+    .site
+    {
+        width: 100%;
+    }
+    .header
+    {
+        padding: 30px 30px 0 30px;
+    }
+    .about
+    {
+        padding: 70px 120px;
+    }
+    .carusel , .donat
+    {
+        padding: 70px 120px;
+    }
+    .carusel h3 , .help h3
+    {
+        padding: 20px 200px;
+    }
+    .footerImg
+    {
+        width: 18%;
+    }
+    .footer h3
+    {
+        font-size: 26px;
+    }
+    .text__element h4
+    {
+        font-size: 18px;
+    }
+    .footer__text
+    {
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024.98px) {
+    .site
+    {
+        width: 100%;
+    }
+    .header
+    {
+        padding: 20px 20px 0 20px;
+    }
+    .about
+    {
+        padding: 60px 100px;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .about__text
+    {
+        padding: 0 0 0 60px;
+    }
+    .carusel , .donat , .help
+    {
+        padding: 50px 60px;
+    }
+    .carusel h3 , .help h3
+    {
+        padding: 20px 150px;
+    }
+    .donat
+    {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .donatImg
+    {
+        width: 60%;
+    }
+    .donate__text
+    {
+        width: 60%;
+    }
+    .footerImg
+    {
+        display: none;
+    }
+    .footer
+    {
+        gap: 50px;
+    }
+}
+@media screen and (max-width:768.98px) and (min-width:481px) {
+    .site
+    {
+        width: 100%;
+    }
+    .header
+    {
+        padding: 20px 20px 0 20px;
+    }
+    .header__contener
+    {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .header__text button
+    {
+        align-self: center;
+    }
+    .nav__toggler
+    {
+        display: block;
+    }
+    label #btn
+    {
+        display: inline-block;
+    }
+    .navbar ul
+    {
+        position: fixed;
+        right: 100%;
+        top: 12vh;
+        z-index: 3;
+        width: 100%;
+        height: 100vh;
+        background-color: #292929;
+        flex-direction: column;
+        gap: 50px;
+        padding: 50px 0;
+        align-items: center;
+        transform: translateX(100%);
+        transition: 0.5s;
+    }
+    #check:checked ~ ul
+    {
+        right: 0;
+    }
+    #check:checked ~ label #cancel
+    {
+        display: none;
+    }
+    #check:checked ~ label #btn
+    {
+        display: block;
+        z-index: 101;
+    }
+    .about
+    {
+        padding: 60px 30px;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .about__text
+    {
+        padding: 0 0 0 60px;
+    }
+    .carusel , .donat , .help
+    {
+        padding: 50px 50px;
+    }
+    .carusel h3 , .help h3
+    {
+        padding: 20px 10px;
+    }
+    /* .HelpPrimeCard
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } */
+    .donat
+    {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .donatImg
+    {
+        width: 60%;
+    }
+    .donate__text
+    {
+        width: 60%;
+    }
+    .footerImg
+    {
+        display: block;
+        width: 40%;
+    }
+    .footer
+    {
+        gap: 50px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:480.98px) and (min-width:0px) {
+    .site
+    {
+        width: 100%;
+    }
+    .header
+    {
+        padding: 20px 20px 0 20px;
+    }
+    .header__contener
+    {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .header__text button
+    {
+        align-self: center;
+    }
+    .nav__toggler
+    {
+        display: block;
+    }
+    label #btn
+    {
+        display: inline-block;
+    }
+    .navbar ul
+    {
+        position: fixed;
+        right: 100%;
+        top: 12vh;
+        z-index: 3;
+        width: 100%;
+        height: 100vh;
+        background-color: #292929;
+        flex-direction: column;
+        gap: 50px;
+        padding: 50px 0;
+        align-items: center;
+        transform: translateX(100%);
+        transition: 0.5s;
+    }
+    #check:checked ~ ul
+    {
+        right: 0;
+    }
+    #check:checked ~ label #cancel
+    {
+        display: none;
+    }
+    #check:checked ~ label #btn
+    {
+        display: block;
+        z-index: 101;
+    }
+    .about
+    {
+        padding: 60px 10px;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .about__text
+    {
+        padding: 0 0 0 60px;
+    }
+    .carusel , .donat , .help
+    {
+        padding: 50px 10px;
+    }
+    .carusel h3 , .help h3
+    {
+        padding: 20px 10px;
+    }
+    .HelpPrimeCard
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .donat
+    {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 10px;
+    }
+    .donatImg
+    {
+        width: 60%;
+    }
+    .donate__text
+    {
+        width: 60%;
+    }
+    .donate__text h5
+    {
+    color: var(--gray);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12.5px;
+    letter-spacing: 0.9px;    
+    }
+    .footerImg
+    {
+        display: block;
+        width: 40%;
+    }
+    .footer
+    {
+        gap: 50px;
+        flex-direction: column;
+    }
+}
